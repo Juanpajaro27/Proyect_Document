@@ -2,17 +2,17 @@ import java.util.List;
 
 public abstract class DocumentScheme {
 
-    protected int Year;
+    public int Year;
 
-    protected String Category;
-    protected List<String> Authors;
-    protected String Edition;
-    protected String Editorial;
-    protected String Format;
-    protected String Language;
-    protected String ISBN;
-    protected int pages;
-    protected String tittle;
+    public String Category;
+    public List<String> Authors;
+    public String Edition;
+    public String Editorial;
+    public String Format;
+    public String Language;
+    public String ISBN;
+    public int pages;
+    public String tittle;
 
     public DocumentScheme(int year, String category, List<String> authors, String edition, String editorial, String format, String language, String ISBN, int pages, String tittle) {
         Year = year;

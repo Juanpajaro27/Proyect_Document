@@ -25,3 +25,5 @@ R
 "src/test/java/MagazinePDFTest.java,1\e\1e8b1e7f1b4512504f4d938d14b2ecad4c64e150
 P
  src/test/java/ThesisPDFTest.java,5\6\5648d8911fe5a7d0cb393a9b2a8aefc4d87904d1
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec

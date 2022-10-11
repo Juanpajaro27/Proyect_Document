@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>DocumentScheme.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Proyect_Document</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">DocumentScheme.java</span></div><h1>DocumentScheme.java</h1><pre class="source lang-java linenums">import java.util.List;
+
+public abstract class DocumentScheme {
+
+    public int Year;
+
+    public String Category;
+    public List&lt;String&gt; Authors;
+    public String Edition;
+    public String Editorial;
+    public String Format;
+    public String Language;
+    public String ISBN;
+    public int pages;
+    public String tittle;
+
+<span class="nc" id="L17">    public DocumentScheme(int year, String category, List&lt;String&gt; authors, String edition, String editorial, String format, String language, String ISBN, int pages, String tittle) {</span>
+<span class="nc" id="L18">        Year = year;</span>
+<span class="nc" id="L19">        Category = category;</span>
+<span class="nc" id="L20">        Authors = authors;</span>
+<span class="nc" id="L21">        Edition = edition;</span>
+<span class="nc" id="L22">        Editorial = editorial;</span>
+<span class="nc" id="L23">        Format = format;</span>
+<span class="nc" id="L24">        Language = language;</span>
+<span class="nc" id="L25">        this.ISBN = ISBN;</span>
+<span class="nc" id="L26">        this.pages = pages;</span>
+<span class="nc" id="L27">        this.tittle = tittle;</span>
+<span class="nc" id="L28">    }</span>
+
+<span class="nc" id="L30">    public DocumentScheme() {</span>
+<span class="nc" id="L31">    }</span>
+
+    public int getYear() {
+<span class="nc" id="L34">        return Year;</span>
+    }
+
+    public void setYear(int year) {
+<span class="nc" id="L38">        Year = year;</span>
+<span class="nc" id="L39">    }</span>
+
+    public String getCategory() {
+<span class="nc" id="L42">        return Category;</span>
+    }
+
+    public void setCategory(String category) {
+<span class="nc" id="L46">        Category = category;</span>
+<span class="nc" id="L47">    }</span>
+
+    public List&lt;String&gt; getAuthors() {
+<span class="nc" id="L50">        return Authors;</span>
+    }
+
+    public void setAuthors(List&lt;String&gt; authors) {
+<span class="nc" id="L54">        Authors = authors;</span>
+<span class="nc" id="L55">    }</span>
+
+    public String getEdition() {
+<span class="nc" id="L58">        return Edition;</span>
+    }
+
+    public void setEdition(String edition) {
+<span class="nc" id="L62">        Edition = edition;</span>
+<span class="nc" id="L63">    }</span>
+
+    public String getEditorial() {
+<span class="nc" id="L66">        return Editorial;</span>
+    }
+
+    public void setEditorial(String editorial) {
+<span class="nc" id="L70">        Editorial = editorial;</span>
+<span class="nc" id="L71">    }</span>
+
+    public String getFormat() {
+<span class="nc" id="L74">        return Format;</span>
+    }
+
+    public void setFormat(String format) {
+<span class="nc" id="L78">        Format = format;</span>
+<span class="nc" id="L79">    }</span>
+
+    public String getLanguage() {
+<span class="nc" id="L82">        return Language;</span>
+    }
+
+    public void setLanguage(String language) {
+<span class="nc" id="L86">        Language = language;</span>
+<span class="nc" id="L87">    }</span>
+
+    public String getISBN() {
+<span class="nc" id="L90">        return ISBN;</span>
+    }
+
+    public void setISBN(String ISBN) {
+<span class="nc" id="L94">        this.ISBN = ISBN;</span>
+<span class="nc" id="L95">    }</span>
+
+    public int getPages() {
+<span class="nc" id="L98">        return pages;</span>
+    }
+
+    public void setPages(int pages) {
+<span class="nc" id="L102">        this.pages = pages;</span>
+<span class="nc" id="L103">    }</span>
+
+    public String getTittle() {
+<span class="nc" id="L106">        return tittle;</span>
+    }
+
+    public void setTittle(String tittle) {
+<span class="nc" id="L110">        this.tittle = tittle;</span>
+<span class="nc" id="L111">    }</span>
+
+    public void ShowData(){
+<span class="nc" id="L114">        System.out.println(&quot;Tittle: &quot;+ getTittle()+&quot;Year: &quot;+getYear()+ &quot;Authors&quot;+ getAuthors() + &quot;Edition: &quot;+ getEdition());</span>
+<span class="nc" id="L115">    }</span>
+
+
+    @Override
+    public String toString() {
+<span class="nc" id="L120">        return &quot;OnlineBoooke{&quot; +</span>
+                &quot;Year=&quot; + Year +
+                &quot;, Category='&quot; + Category + '\'' +
+                &quot;, Authors=&quot; + Authors +
+                &quot;, Edition='&quot; + Edition + '\'' +
+                &quot;, Editorial='&quot; + Editorial + '\'' +
+                &quot;, Format='&quot; + Format + '\'' +
+                &quot;, Language='&quot; + Language + '\'' +
+                &quot;, ISBN='&quot; + ISBN + '\'' +
+                &quot;, pages=&quot; + pages +
+                &quot;, tittle='&quot; + tittle + '\'' +
+                '}';
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>
