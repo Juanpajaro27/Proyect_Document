@@ -5,6 +5,7 @@ public class Proyect_Document {
 
     public static void main(String[] args){
 
+
         /*
         String[] Authorslist = {"Juan","Albert","Roger"};
         List<String> Authors = Arrays.asList(Authorslist);
@@ -13,6 +14,8 @@ public class Proyect_Document {
         String category = onlinebook.GetCategory("Law");
         onlinebook = new BookOnline(1974, category, Authors,"3ra edicion","MProduction","Impreso","Español","1230",40,"Primer ejemplo");
         System.out.println(onlinebook.toString());
+
          */
+
     }
 }

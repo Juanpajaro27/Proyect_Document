@@ -11,14 +11,13 @@ public class CientificOnline extends DocumentScheme implements IOnlinePDF{
     }
 
     @Override
-    public String GetCategory(String Category) {
+    public String GetCategory(String CategoryCOnline) {
 
-        if(Arrays.asList(CategoryOnline).contains(Category)) {
-            System.out.println("Se ha agregado correctamente la categoria");
+        if(Arrays.asList(CategoryOnline).contains(CategoryCOnline)) {
+            return CategoryCOnline;
         }else {
-            System.out.println("Ha ocurrido un problema");
+            return null;
         }
-        return Category;
     }
 
 }

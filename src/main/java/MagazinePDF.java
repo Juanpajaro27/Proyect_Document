@@ -11,22 +11,20 @@ public class MagazinePDF extends DocumentScheme implements IPDF{
     }
 
     @Override
-    public String operation(String Operation) {
-        if(Arrays.asList(OperationList).contains(Operation)){
-            System.out.println("Se ha realizado la operacion");
+    public String operation(String OperationMPDF) {
+        if(Arrays.asList(OperationList).contains(OperationMPDF)){
+            return OperationMPDF;
         }else{
-            System.out.println("No se ha podido realizar la operacion");
+            return null;
         }
-        return Operation;
     }
 
     @Override
-    public String Category(String Category) {
+    public String Category(String CategoryMPDF) {
         if(Arrays.asList(CategoryPDF).contains(Category)) {
-            System.out.println("Se ha agregado correctamente la categoria");
+            return CategoryMPDF;
         }else {
-            System.out.println("Ha ocurrido un problema");
+            return null;
         }
-        return Category;
     }
 }

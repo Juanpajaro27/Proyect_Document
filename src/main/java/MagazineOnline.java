@@ -11,12 +11,11 @@ public class MagazineOnline  extends DocumentScheme implements IOnlinePDF{
     }
 
     @Override
-    public String GetCategory(String Category) {
-        if(Arrays.asList(CategoryOnline).contains(Category)) {
-            System.out.println("Se ha agregado correctamente la categoria");
+    public String GetCategory(String CategoryMOnline) {
+        if(Arrays.asList(CategoryOnline).contains(CategoryMOnline)) {
+            return CategoryMOnline;
         }else {
-            System.out.println("Ha ocurrido un problema");
+            return null;
         }
-        return Category;
     }
 }

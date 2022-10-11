@@ -7,26 +7,24 @@ public class BookPDF extends DocumentScheme implements IPDF{
         super(year, category, authors, edition, editorial, format, language, ISBN, pages, tittle);
     }
 
+    @Override
+    public String operation(String OperationBPDF) {
+        if(Arrays.asList(OperationList).contains(OperationBPDF)){
+            return OperationBPDF;
+        }else{
+            return null;
+        }
+    }
+
     public BookPDF() {
     }
 
     @Override
-    public String operation(String Operation) {
-        if(Arrays.asList(OperationList).contains(Operation)){
-            System.out.println("Se ha realizado la operacion");
-        }else{
-            System.out.println("No se ha podido realizar la operacion");
-        }
-        return Operation;
-    }
-
-    @Override
-    public String Category(String Category) {
-        if(Arrays.asList(CategoryPDF).contains(Category)) {
-            System.out.println("Se ha agregado correctamente la categoria");
+    public String Category(String CategoryBPDF) {
+        if(Arrays.asList(CategoryPDF).contains(CategoryBPDF)) {
+            return CategoryBPDF;
         }else {
-            System.out.println("Ha ocurrido un problema");
+            return null;
         }
-        return Category;
     }
 }

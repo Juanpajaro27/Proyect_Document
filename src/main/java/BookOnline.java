@@ -7,8 +7,8 @@ public class BookOnline extends DocumentScheme implements IOnlinePDF  {
         super(year, category, authors, edition, editorial, format, language, ISBN, pages, tittle);
     }
 
-    public BookOnline(){
-    };
+    public BookOnline() {
+    }
 
     @Override
     public String toString() {
@@ -27,13 +27,12 @@ public class BookOnline extends DocumentScheme implements IOnlinePDF  {
     }
 
     @Override
-    public String GetCategory(String Category) {
+    public String GetCategory(String CategoryBOnline) {
 
-        if(Arrays.asList(CategoryOnline).contains(Category)) {
-            System.out.println("Se ha agregado correctamente la categoria");
+        if(Arrays.asList(CategoryOnline).contains(CategoryBOnline)) {
+            return CategoryBOnline;
         }else {
-            System.out.println("Ha ocurrido un problema");
+            return null;
         }
-        return Category;
     }
 }

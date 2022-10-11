@@ -11,22 +11,20 @@ public class ThesisPDF extends DocumentScheme implements IPDF{
     }
 
     @Override
-    public String operation(String Operation) {
-        if(Arrays.asList(OperationList).contains(Operation)){
-            System.out.println("Se ha realizado la operacion");
+    public String operation(String OperationTHPDF) {
+        if(Arrays.asList(OperationList).contains(OperationTHPDF)){
+            return OperationTHPDF;
         }else{
-            System.out.println("No se ha podido realizar la operacion");
+            return null;
         }
-        return Operation;
     }
 
     @Override
-    public String Category(String Category) {
-        if(Arrays.asList(CategoryPDF).contains(Category)) {
-            System.out.println("Se ha agregado correctamente la categoria");
+    public String Category(String CategoryTHPDF) {
+        if(Arrays.asList(CategoryPDF).contains(CategoryTHPDF)) {
+            return CategoryTHPDF;
         }else {
-            System.out.println("Ha ocurrido un problema");
+            return null;
         }
-        return Category;
     }
 }

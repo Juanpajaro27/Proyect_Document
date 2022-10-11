@@ -11,22 +11,20 @@ public class CientificPDF extends DocumentScheme implements IPDF{
     }
 
     @Override
-    public String operation(String Operation) {
-        if(Arrays.asList(OperationList).contains(Operation)){
-            System.out.println("Se ha realizado la operacion");
+    public String operation(String OperationCPDF) {
+        if(Arrays.asList(OperationList).contains(OperationCPDF)){
+            return OperationCPDF;
         }else{
-            System.out.println("No se ha podido realizar la operacion");
+            return null;
         }
-        return Operation;
     }
 
     @Override
-    public String Category(String Category) {
+    public String Category(String CategoryCPDF) {
         if(Arrays.asList(CategoryPDF).contains(Category)) {
-            System.out.println("Se ha agregado correctamente la categoria");
+            return CategoryCPDF;
         }else {
-            System.out.println("Ha ocurrido un problema");
+            return null;
         }
-        return Category;
     }
 }
