@@ -4,10 +4,10 @@ import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class BookOnlineTest {
+public class BookOnlineTest {
 
     @Test
-    void testToString() {
+   public void testToString() {
         String[] Authorslist = {"Juan","Albert","Roger"};
         List<String> Authors = Arrays.asList(Authorslist);
         String category = "Law";
@@ -17,7 +17,7 @@ class BookOnlineTest {
     }
 
     @Test
-    void getCategory() {
+    public void getCategory() {
         Document documentBook = Producer_Factory.getDocumentBook(true);
         IOnlinePDF onlinebook = documentBook.getDocumentOnline("BookOnline");
         String category = onlinebook.GetCategory("Law");

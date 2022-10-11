@@ -4,10 +4,10 @@ import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class CientificPDFTest {
+public class CientificPDFTest {
 
     @Test
-    void operation() {
+    public void operation() {
         Document documentCientific = Producer_Factory.getDocumentCientific(true);
         IPDF science = documentCientific.getDocumentPDF("CientificPDF");
         String operationPDF = science.operation("Copied");
@@ -16,7 +16,7 @@ class CientificPDFTest {
     }
 
     @Test
-    void category() {
+    public void category() {
         Document documentCientific = Producer_Factory.getDocumentCientific(true);
         IPDF science = documentCientific.getDocumentPDF("CientificPDF");
         String category = science.Category("Law");

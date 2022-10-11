@@ -7,13 +7,13 @@ public class MagazinePDF extends DocumentScheme implements IPDF{
 <span class="nc" id="L7">        super(year, category, authors, edition, editorial, format, language, ISBN, pages, tittle);</span>
 <span class="nc" id="L8">    }</span>
 
-<span class="nc" id="L10">    public MagazinePDF() {</span>
-<span class="nc" id="L11">    }</span>
+<span class="fc" id="L10">    public MagazinePDF() {</span>
+<span class="fc" id="L11">    }</span>
 
     @Override
     public String operation(String OperationMPDF) {
-<span class="nc bnc" id="L15" title="All 2 branches missed.">        if(Arrays.asList(OperationList).contains(OperationMPDF)){</span>
-<span class="nc" id="L16">            return OperationMPDF;</span>
+<span class="pc bpc" id="L15" title="1 of 2 branches missed.">        if(Arrays.asList(OperationList).contains(OperationMPDF)){</span>
+<span class="fc" id="L16">            return OperationMPDF;</span>
         }else{
 <span class="nc" id="L18">            return null;</span>
         }
@@ -21,10 +21,10 @@ public class MagazinePDF extends DocumentScheme implements IPDF{
 
     @Override
     public String Category(String CategoryMPDF) {
-<span class="nc bnc" id="L24" title="All 2 branches missed.">        if(Arrays.asList(CategoryPDF).contains(Category)) {</span>
+<span class="pc bpc" id="L24" title="1 of 2 branches missed.">        if(Arrays.asList(CategoryPDF).contains(Category)) {</span>
 <span class="nc" id="L25">            return CategoryMPDF;</span>
         }else {
-<span class="nc" id="L27">            return null;</span>
+<span class="fc" id="L27">            return null;</span>
         }
     }
 }

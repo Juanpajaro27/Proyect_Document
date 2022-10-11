@@ -4,10 +4,10 @@ import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class CientificOnlineTest {
+public class CientificOnlineTest {
 
     @Test
-    void getCategory() {
+    public void getCategory() {
         Document documentCientific = Producer_Factory.getDocumentCientific(true);
         IOnlinePDF onlineCientific = documentCientific.getDocumentOnline("CientificOnline");
         String category = onlineCientific.GetCategory("Law");

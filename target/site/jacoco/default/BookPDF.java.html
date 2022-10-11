@@ -9,20 +9,20 @@ public class BookPDF extends DocumentScheme implements IPDF{
 
     @Override
     public String operation(String OperationBPDF) {
-<span class="nc bnc" id="L12" title="All 2 branches missed.">        if(Arrays.asList(OperationList).contains(OperationBPDF)){</span>
-<span class="nc" id="L13">            return OperationBPDF;</span>
+<span class="pc bpc" id="L12" title="1 of 2 branches missed.">        if(Arrays.asList(OperationList).contains(OperationBPDF)){</span>
+<span class="fc" id="L13">            return OperationBPDF;</span>
         }else{
 <span class="nc" id="L15">            return null;</span>
         }
     }
 
-<span class="nc" id="L19">    public BookPDF() {</span>
-<span class="nc" id="L20">    }</span>
+<span class="fc" id="L19">    public BookPDF() {</span>
+<span class="fc" id="L20">    }</span>
 
     @Override
     public String Category(String CategoryBPDF) {
-<span class="nc bnc" id="L24" title="All 2 branches missed.">        if(Arrays.asList(CategoryPDF).contains(CategoryBPDF)) {</span>
-<span class="nc" id="L25">            return CategoryBPDF;</span>
+<span class="pc bpc" id="L24" title="1 of 2 branches missed.">        if(Arrays.asList(CategoryPDF).contains(CategoryBPDF)) {</span>
+<span class="fc" id="L25">            return CategoryBPDF;</span>
         }else {
 <span class="nc" id="L27">            return null;</span>
         }
