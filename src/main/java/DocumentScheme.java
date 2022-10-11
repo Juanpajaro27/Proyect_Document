@@ -1,11 +1,11 @@
-import java.util.ArrayList;
+import java.util.List;
 
-public class DocumentScheme {
+public abstract class DocumentScheme {
 
     protected int Year;
 
     protected String Category;
-    protected String Authors;
+    protected List<String> Authors;
     protected String Edition;
     protected String Editorial;
     protected String Format;
@@ -14,26 +14,21 @@ public class DocumentScheme {
     protected int pages;
     protected String tittle;
 
+    public DocumentScheme(int year, String category, List<String> authors, String edition, String editorial, String format, String language, String ISBN, int pages, String tittle) {
+        Year = year;
+        Category = category;
+        Authors = authors;
+        Edition = edition;
+        Editorial = editorial;
+        Format = format;
+        Language = language;
+        this.ISBN = ISBN;
+        this.pages = pages;
+        this.tittle = tittle;
+    }
+
     public DocumentScheme() {
     }
-
-    @Override
-    public String toString() {
-        return "DocumentScheme{" +
-                "Year=" + Year +
-                ", Category='" + Category + '\'' +
-                ", Authors='" + Authors + '\'' +
-                ", Edition='" + Edition + '\'' +
-                ", Editorial='" + Editorial + '\'' +
-                ", Format='" + Format + '\'' +
-                ", Language='" + Language + '\'' +
-                ", ISBN='" + ISBN + '\'' +
-                ", pages=" + pages +
-                ", tittle='" + tittle + '\'' +
-                '}';
-    }
-
-
 
     public int getYear() {
         return Year;
@@ -51,11 +46,11 @@ public class DocumentScheme {
         Category = category;
     }
 
-    public String getAuthors() {
+    public List<String> getAuthors() {
         return Authors;
     }
 
-    public void setAuthors(String authors) {
+    public void setAuthors(List<String> authors) {
         Authors = authors;
     }
 
@@ -113,5 +108,26 @@ public class DocumentScheme {
 
     public void setTittle(String tittle) {
         this.tittle = tittle;
+    }
+
+    public void ShowData(){
+        System.out.println("Tittle: "+ getTittle()+"Year: "+getYear()+ "Authors"+ getAuthors() + "Edition: "+ getEdition());
+    }
+
+
+    @Override
+    public String toString() {
+        return "OnlineBoooke{" +
+                "Year=" + Year +
+                ", Category='" + Category + '\'' +
+                ", Authors=" + Authors +
+                ", Edition='" + Edition + '\'' +
+                ", Editorial='" + Editorial + '\'' +
+                ", Format='" + Format + '\'' +
+                ", Language='" + Language + '\'' +
+                ", ISBN='" + ISBN + '\'' +
+                ", pages=" + pages +
+                ", tittle='" + tittle + '\'' +
+                '}';
     }
 }

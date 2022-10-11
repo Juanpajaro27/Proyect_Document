@@ -1,0 +1,17 @@
+
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²“Ë´
+k	java:S117
+"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æ˜ø¤ùÿÿÿÿ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£ØÄ÷
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯‡³¿
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÿËª¹
+E
+java:S5411"*Use the primitive boolean expression here.(ïçˆÁûÿÿÿÿ
+@
+java:S5411"*Use the primitive boolean expression here.(è™Ûã
+E
+java:S5411"*Use the primitive boolean expression here.(æ­•òýÿÿÿÿ
+@
+java:S5411"*Use the primitive boolean expression here.(°çÜð
+P
+java:S1118":Add a private constructor to hide the implicit public one.(ÿËª¹
