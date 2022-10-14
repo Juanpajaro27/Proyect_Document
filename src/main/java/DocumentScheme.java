@@ -110,14 +110,9 @@ public abstract class DocumentScheme {
         this.tittle = tittle;
     }
 
-    public void ShowData(){
-        System.out.println("Tittle: "+ getTittle()+"Year: "+getYear()+ "Authors"+ getAuthors() + "Edition: "+ getEdition());
-    }
-
-
     @Override
     public String toString() {
-        return "OnlineBoooke{" +
+        return "BoolOnline{" +
                 "Year=" + Year +
                 ", Category='" + Category + '\'' +
                 ", Authors=" + Authors +

@@ -5,33 +5,33 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 public class DocumentSchemeTest {
-    String[] lauthors = {"Jorge","Manuel"};
-    List<String> authors= Arrays.asList(lauthors);
-    DocumentScheme scheme = new BookOnline(1976,"Law",authors,"2da","Cartagena","Impreso","Español","ABSF",23,"NuevoLibro");
+    String[] ListAuthors = {"Jorge","Manuel"};
+    List<String> authors= Arrays.asList(ListAuthors);
+    DocumentScheme scheme = new BookOnline(1976,"Law",authors,"2da","Cartagena","Press","Spanish","New",23,"NewBook");
     @Test
-    public void getYear() {
+    public void getYearTest() {
         int year = scheme.getYear();
         assertEquals(year,1976);
     }
 
     @Test
-    public void setYear() {
+    public void setYearTest() {
          scheme.setYear(1989);
-         int Newyearscheme= scheme.getYear();
-         assertEquals(Newyearscheme,1989);
+         int NewYearScheme= scheme.getYear();
+         assertEquals(NewYearScheme,1989);
     }
 
     @Test
-    public void getCategory() {
+    public void getCategoryTest() {
         String Category = scheme.getCategory();
         assertEquals(Category,"Law");
     }
 
     @Test
-    public void setCategory() {
+    public void setCategoryTest() {
         scheme.setCategory("Art");
-        String Newcategory = scheme.getCategory();
-        assertEquals(Newcategory,"Art");
+        String NewCategory = scheme.getCategory();
+        assertEquals(NewCategory,"Art");
     }
 
     @Test
@@ -44,99 +44,99 @@ public class DocumentSchemeTest {
     }
 
     @Test
-    public void getEdition() {
+    public void getEditionTest() {
         String GetEdition = scheme.getEdition();
         assertEquals(GetEdition,"2da");
     }
 
     @Test
-    public void setEdition() {
+    public void setEditionTest() {
         scheme.setEdition("3ra");
         String NewEdition = scheme.getEdition();
         assertEquals(NewEdition,"3ra");
     }
 
     @Test
-    public void getEditorial() {
+    public void getEditorialTest() {
         String editorial = scheme.getEditorial();
         assertEquals(editorial,"Cartagena");
     }
 
     @Test
-    public void setEditorial() {
+    public void setEditorialTest() {
         scheme.setEditorial("Pearson");
         String newEditorial = scheme.getEditorial();
         assertEquals(newEditorial,"Pearson");
     }
 
     @Test
-    public void getFormat() {
+    public void getFormatTest() {
         String getFormat = scheme.getFormat();
-        assertEquals(getFormat,"Impreso");
+        assertEquals(getFormat,"Press");
     }
 
     @Test
-    public void setFormat() {
+    public void setFormatTest() {
         scheme.setFormat("Online");
         String getFormat = scheme.getFormat();
         assertEquals(getFormat,"Online");
     }
 
     @Test
-    public void getLanguage() {
-        String GetLenguage = scheme.getLanguage();
-        assertEquals(GetLenguage,"Español");
+    public void getLanguageTest() {
+        String GetLanguage = scheme.getLanguage();
+        assertEquals(GetLanguage,"Spanish");
     }
 
     @Test
-    public void setLanguage() {
+    public void setLanguageTest() {
         scheme.setLanguage("English");
-        String SetLenguage = scheme.getLanguage();
-        assertEquals(SetLenguage,"English");
+        String SetLanguage = scheme.getLanguage();
+        assertEquals(SetLanguage,"English");
     }
 
     @Test
-    public void getISBN() {
+    public void getISBNTest() {
         String GetISBN = scheme.getISBN();
-        assertEquals(GetISBN,"ABSF");
+        assertEquals(GetISBN,"New");
     }
 
     @Test
-    public void setISBN() {
-        scheme.setISBN("ACFM");
+    public void setISBNTest() {
+        scheme.setISBN("New2");
         String SetISBN = scheme.getISBN();
-        assertEquals(SetISBN,"ACFM");
+        assertEquals(SetISBN,"New2");
     }
 
     @Test
-    public void getPages() {
+    public void getPagesTest() {
         int GetPage = scheme.getPages();
         assertEquals(GetPage,23);
     }
 
     @Test
-    public void setPages() {
+    public void setPagesTest() {
         scheme.setPages(45);
         int SetPages = scheme.getPages();
         assertEquals(SetPages,45);
     }
 
     @Test
-    public void getTittle() {
+    public void getTittleTest() {
         String GetTittle = scheme.getTittle();
-        assertEquals(GetTittle,"NuevoLibro");
+        assertEquals(GetTittle,"NewBook");
     }
 
     @Test
-    public void setTittle() {
+    public void setTittleTest() {
         scheme.setTittle("SecondBook");
         String SetTittle = scheme.getTittle();
         assertEquals(SetTittle,"SecondBook");
     }
 
     @Test
-    public void testToString() {
-        DocumentScheme scheme2 = new BookOnline(1971,"Science",authors,"2da","Cartagena","Impreso","Español","ABSF",23,"SecondBook");
+    public void testToStringTest() {
+        DocumentScheme scheme2 = new BookOnline(1971,"Science",authors,"2da","Cartagena","Press","Spanish","New2",23,"SecondBook");
         assertNotEquals(scheme.toString(),scheme2.toString());
     }
 }

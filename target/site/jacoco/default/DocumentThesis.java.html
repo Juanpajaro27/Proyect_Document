@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>DocumentThesis.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Proyect_Document</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">DocumentThesis.java</span></div><h1>DocumentThesis.java</h1><pre class="source lang-java linenums"><span class="fc" id="L1">public class DocumentThesis extends Document{</span>
     @Override
-    public IPDF getDocumentPDF(String PDFtype) {
-<span class="pc bpc" id="L4" title="1 of 2 branches missed.">        if(PDFtype.equalsIgnoreCase(&quot;Thesis&quot;)){</span>
+    public IPDF getDocumentPDF(String PDFType) {
+<span class="pc bpc" id="L4" title="1 of 2 branches missed.">        if(PDFType.equalsIgnoreCase(&quot;Thesis&quot;)){</span>
 <span class="fc" id="L5">            return new ThesisPDF();</span>
         }
 <span class="nc" id="L7">        return null;</span>
     }
 
     @Override
-    public IOnlinePDF getDocumentOnline(String Onlinetype) {
-<span class="pc bpc" id="L12" title="1 of 2 branches missed.">        if(Onlinetype.equalsIgnoreCase(&quot;MagazinePDF&quot;)){</span>
+    public IOnlinePDF getDocumentOnline(String OnlineType) {
+<span class="pc bpc" id="L12" title="1 of 2 branches missed.">        if(OnlineType.equalsIgnoreCase(&quot;MagazinePDF&quot;)){</span>
 <span class="fc" id="L13">            return new ThesisOnline();</span>
         }
 <span class="nc" id="L15">        return null;</span>

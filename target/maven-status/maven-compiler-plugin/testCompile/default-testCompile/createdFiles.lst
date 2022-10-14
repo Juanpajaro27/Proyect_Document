@@ -1,9 +1,10 @@
 MagazinePDFTest.class
-CientificOnlineTest.class
+ScientificOnlineTest.class
 BookOnlineTest.class
-CientificPDFTest.class
 DocumentSchemeTest.class
 BookPDFTest.class
 ThesisOnlineTest.class
+ScientificPDFTest.class
 ThesisPDFTest.class
 MagazineOnlineTest.class
+Producer_FactoryTest.class

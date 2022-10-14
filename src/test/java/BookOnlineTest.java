@@ -8,25 +8,25 @@ public class BookOnlineTest {
 
     @Test
    public void BookOnlineTest(){
-        String[] Authorslist = {"Juan","Albert","Roger"};
-        List<String> Authors = Arrays.asList(Authorslist);
+        String[] ListAuthors = {"Juan","Albert","Roger"};
+        List<String> Authors = Arrays.asList(ListAuthors);
         String category = "Law";
-        DocumentScheme onlinebook = new BookOnline(1974, category, Authors,"3ra edicion","MProduction","Impreso","Español","1230",40,"Primer ejemplo");
-        DocumentScheme BookOnline = new BookOnline(1974, category, Authors,"3ra edicion","MProduction","Impreso","Español","1230",40,"Primer ejemplo");
-        assertEquals(onlinebook, onlinebook);
+        DocumentScheme BookOnline = new BookOnline(1974, category, Authors,"3ra edition","MProduction","press","spanish","1230",40,"First example");
+        DocumentScheme BookOnline2 = new BookOnline(1974, category, Authors,"3ra edition","MProduction","press","spanish","1230",40,"First Example");
+        assertNotSame(BookOnline,BookOnline2);
     }
     @Test
-   public void testToString() {
-        String[] Authorslist = {"Juan","Albert","Roger"};
-        List<String> Authors = Arrays.asList(Authorslist);
+   public void testToStringTest() {
+        String[] ListAuthors = {"Juan","Albert","Roger"};
+        List<String> Authors = Arrays.asList(ListAuthors);
         String category = "Law";
-        BookOnline onlinebook = new BookOnline(1974, category, Authors,"3ra edicion","MProduction","Impreso","Español","1230",40,"Primer ejemplo");
-        BookOnline onlineboook = new BookOnline(1975, category, Authors,"3ra edicion","MProduction","Impreso","Español","1230",40,"Primer ejemplo");
-        assertNotEquals(onlinebook.toString(),onlineboook.toString());
+        BookOnline Bookonline = new BookOnline(1974, category, Authors,"3ra edition","MProduction","press","Spanish","1230",40,"First Example");
+        BookOnline BookOnline2 = new BookOnline(1975, category, Authors,"3ra edition","MProduction","press","Spanish","1230",40,"First Example");
+        assertNotEquals(Bookonline.toString(),BookOnline2.toString());
     }
 
     @Test
-    public void getCategory() {
+    public void getCategoryTest() {
         Document documentBook = Producer_Factory.getDocumentBook(true);
         IOnlinePDF onlinebook = documentBook.getDocumentOnline("BookOnline");
         String category = onlinebook.GetCategory("Law");

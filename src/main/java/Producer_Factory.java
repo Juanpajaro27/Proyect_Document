@@ -1,5 +1,6 @@
 public class Producer_Factory {
 
+    private Producer_Factory(){}
     public static Document getDocumentBook(Boolean Book){
         if(Book){
             return new DocumentBook();
@@ -7,9 +8,9 @@ public class Producer_Factory {
         return null;
     }
 
-    public static Document getDocumentCientific(Boolean Cientific){
-        if(Cientific){
-            return new DocumentCientific();
+    public static Document getDocumentScientific(Boolean Scientific){
+        if(Scientific){
+            return new DocumentScientific();
         }
         return null;
     }

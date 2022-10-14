@@ -1,13 +1,13 @@
 import java.util.Arrays;
 import java.util.List;
 
-public class CientificPDF extends DocumentScheme implements IPDF{
+public class ScientificPDF extends DocumentScheme implements IPDF{
 
-    public CientificPDF(int year, String category, List<String> authors, String edition, String editorial, String format, String language, String ISBN, int pages, String tittle) {
+    public ScientificPDF(int year, String category, List<String> authors, String edition, String editorial, String format, String language, String ISBN, int pages, String tittle) {
         super(year, category, authors, edition, editorial, format, language, ISBN, pages, tittle);
     }
 
-    public CientificPDF() {
+    public ScientificPDF() {
     }
 
     @Override

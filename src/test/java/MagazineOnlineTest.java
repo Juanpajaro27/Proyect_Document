@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class MagazineOnlineTest {
 
     @Test
-    public void getCategory() {
+    public void getCategoryTest() {
         Document documentMagazine = Producer_Factory.getDocumentMagazine(true);
         IOnlinePDF onlineMagazine = documentMagazine.getDocumentOnline("MagazineOnline");
         String category = onlineMagazine.GetCategory("Law");
@@ -20,12 +20,12 @@ public class MagazineOnlineTest {
     }
 
     @Test
-    public void testToString() {
-        String[] Authorslist = {"Juan","Albert","Roger"};
-        List<String> Authors = Arrays.asList(Authorslist);
+    public void testToStringTest() {
+        String[] ListAuthors = {"Juan","Albert","Roger"};
+        List<String> Authors = Arrays.asList(ListAuthors);
         String category = "Law";
-        MagazineOnline Magagineonline = new MagazineOnline(1974, category, Authors,"3ra edicion","MProduction","Impreso","Español","1230",40,"Primer ejemplo");
-        MagazineOnline magazineonline = new MagazineOnline(1975, category, Authors,"3ra edicion","MProduction","Impreso","Español","1230",40,"Primer ejemplo");
-        assertNotEquals(Magagineonline.toString(),magazineonline.toString());
+        MagazineOnline MagazineOnline = new MagazineOnline(1974, category, Authors,"3ra Edition","MProduction","Press","Spanish","1230",40,"First Example");
+        MagazineOnline magazineonline = new MagazineOnline(1975, category, Authors,"3ra Edition","MProduction","Press","Spanish","1230",40,"First Example");
+        assertNotEquals(MagazineOnline.toString(),magazineonline.toString());
     }
 }

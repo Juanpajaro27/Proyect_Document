@@ -1,13 +1,13 @@
 import java.util.Arrays;
 import java.util.List;
 
-public class CientificOnline extends DocumentScheme implements IOnlinePDF{
+public class ScientificOnline extends DocumentScheme implements IOnlinePDF{
 
-    public CientificOnline(int year, String category, List<String> authors, String edition, String editorial, String format, String language, String ISBN, int pages, String tittle) {
+    public ScientificOnline(int year, String category, List<String> authors, String edition, String editorial, String format, String language, String ISBN, int pages, String tittle) {
         super(year, category, authors, edition, editorial, format, language, ISBN, pages, tittle);
     }
 
-    public CientificOnline() {
+    public ScientificOnline() {
     }
 
     @Override

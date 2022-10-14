@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class ThesisPDFTest {
 
     @Test
-    public void operation() {
+    public void operationTest() {
         Document documentThesis = Producer_Factory.getDocumentThesis(true);
         IPDF thesis = documentThesis.getDocumentPDF("Thesis");
         String operationPDF = thesis.operation("Copied");
@@ -17,9 +17,9 @@ public class ThesisPDFTest {
     }
 
     @Test
-    public void category() {
-        Document documentthesis = Producer_Factory.getDocumentThesis(true);
-        IPDF thesis = documentthesis.getDocumentPDF("Thesis");
+    public void categoryTest() {
+        Document documentThesis = Producer_Factory.getDocumentThesis(true);
+        IPDF thesis = documentThesis.getDocumentPDF("Thesis");
         String category = thesis.Category("Law");
         String NotCategory = "Coding";
         assertEquals(category,"Law");
@@ -30,12 +30,12 @@ public class ThesisPDFTest {
     }
 
     @Test
-    public void testToString() {
-        String[] Authorslist = {"Juan","Albert","Roger"};
-        List<String> Authors = Arrays.asList(Authorslist);
+    public void testToStringTest() {
+        String[] ListAuthors = {"Juan","Albert","Roger"};
+        List<String> Authors = Arrays.asList(ListAuthors);
         String category = "Law";
-        ThesisPDF thesisPDF = new ThesisPDF(1974, category, Authors,"3ra edicion","MProduction","Impreso","Español","1230",40,"Primer ejemplo");
-        ThesisPDF thesisPDF1 = new ThesisPDF(1975, category, Authors,"3ra edicion","MProduction","Impreso","Español","1230",40,"Primer ejemplo");
+        ThesisPDF thesisPDF = new ThesisPDF(1974, category, Authors,"3ra edition","MProduction","Press","Spanish","1230",40,"First Example");
+        ThesisPDF thesisPDF1 = new ThesisPDF(1975, category, Authors,"3ra edition","MProduction","Press","Spanish","1230",40,"First Example");
         assertNotEquals(thesisPDF.toString(),thesisPDF1.toString());
     }
 }
