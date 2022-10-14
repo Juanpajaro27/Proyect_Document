@@ -20,4 +20,8 @@ public class CientificOnline extends DocumentScheme implements IOnlinePDF{
         }
     }
 
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }

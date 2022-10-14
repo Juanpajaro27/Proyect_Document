@@ -2,6 +2,7 @@ MagazinePDFTest.class
 CientificOnlineTest.class
 BookOnlineTest.class
 CientificPDFTest.class
+DocumentSchemeTest.class
 BookPDFTest.class
 ThesisOnlineTest.class
 ThesisPDFTest.class

@@ -21,10 +21,15 @@ public class MagazinePDF extends DocumentScheme implements IPDF{
 
     @Override
     public String Category(String CategoryMPDF) {
-        if(Arrays.asList(CategoryPDF).contains(Category)) {
+        if(Arrays.asList(CategoryPDF).contains(CategoryMPDF)) {
             return CategoryMPDF;
         }else {
             return null;
         }
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
     }
 }

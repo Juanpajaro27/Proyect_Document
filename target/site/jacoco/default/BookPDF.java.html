@@ -4,8 +4,8 @@ import java.util.List;
 public class BookPDF extends DocumentScheme implements IPDF{
 
     public BookPDF(int year, String category, List&lt;String&gt; authors, String edition, String editorial, String format, String language, String ISBN, int pages, String tittle) {
-<span class="nc" id="L7">        super(year, category, authors, edition, editorial, format, language, ISBN, pages, tittle);</span>
-<span class="nc" id="L8">    }</span>
+<span class="fc" id="L7">        super(year, category, authors, edition, editorial, format, language, ISBN, pages, tittle);</span>
+<span class="fc" id="L8">    }</span>
 
     @Override
     public String operation(String OperationBPDF) {
@@ -26,6 +26,11 @@ public class BookPDF extends DocumentScheme implements IPDF{
         }else {
 <span class="nc" id="L27">            return null;</span>
         }
+    }
+
+    @Override
+    public String toString() {
+<span class="fc" id="L33">        return super.toString();</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

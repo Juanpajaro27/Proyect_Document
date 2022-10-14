@@ -18,4 +18,9 @@ public class MagazineOnline  extends DocumentScheme implements IOnlinePDF{
             return null;
         }
     }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }

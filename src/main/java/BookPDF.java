@@ -27,4 +27,9 @@ public class BookPDF extends DocumentScheme implements IPDF{
             return null;
         }
     }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }

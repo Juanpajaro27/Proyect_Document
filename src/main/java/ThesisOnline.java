@@ -12,7 +12,7 @@ public class ThesisOnline extends DocumentScheme implements IOnlinePDF{
 
     @Override
     public String GetCategory(String CategoryTOnline) {
-        if(Arrays.asList(CategoryOnline).contains(Category)) {
+        if(Arrays.asList(CategoryOnline).contains(CategoryTOnline)) {
             return CategoryTOnline;
         }else {
             return null;

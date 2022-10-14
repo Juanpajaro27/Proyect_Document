@@ -7,6 +7,15 @@ import static org.junit.jupiter.api.Assertions.*;
 public class BookOnlineTest {
 
     @Test
+   public void BookOnlineTest(){
+        String[] Authorslist = {"Juan","Albert","Roger"};
+        List<String> Authors = Arrays.asList(Authorslist);
+        String category = "Law";
+        DocumentScheme onlinebook = new BookOnline(1974, category, Authors,"3ra edicion","MProduction","Impreso","Español","1230",40,"Primer ejemplo");
+        DocumentScheme BookOnline = new BookOnline(1974, category, Authors,"3ra edicion","MProduction","Impreso","Español","1230",40,"Primer ejemplo");
+        assertEquals(onlinebook, onlinebook);
+    }
+    @Test
    public void testToString() {
         String[] Authorslist = {"Juan","Albert","Roger"};
         List<String> Authors = Arrays.asList(Authorslist);
@@ -22,7 +31,7 @@ public class BookOnlineTest {
         IOnlinePDF onlinebook = documentBook.getDocumentOnline("BookOnline");
         String category = onlinebook.GetCategory("Law");
         String NotCategory = "Coding";
-        assertNotEquals(category,NotCategory);
+        assertEquals(category,"Law");
         String[] CategoryOnline = {"Art","Law","Engineering"};
 
         assertFalse(Arrays.asList(CategoryOnline).contains(NotCategory));

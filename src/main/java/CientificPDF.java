@@ -21,10 +21,15 @@ public class CientificPDF extends DocumentScheme implements IPDF{
 
     @Override
     public String Category(String CategoryCPDF) {
-        if(Arrays.asList(CategoryPDF).contains(Category)) {
+        if(Arrays.asList(CategoryPDF).contains(CategoryCPDF)) {
             return CategoryCPDF;
         }else {
             return null;
         }
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
     }
 }

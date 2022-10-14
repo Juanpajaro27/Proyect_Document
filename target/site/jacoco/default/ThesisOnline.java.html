@@ -4,18 +4,18 @@ import java.util.List;
 public class ThesisOnline extends DocumentScheme implements IOnlinePDF{
 
     public ThesisOnline(int year, String category, List&lt;String&gt; authors, String edition, String editorial, String format, String language, String ISBN, int pages, String tittle) {
-<span class="nc" id="L7">        super(year, category, authors, edition, editorial, format, language, ISBN, pages, tittle);</span>
-<span class="nc" id="L8">    }</span>
+<span class="fc" id="L7">        super(year, category, authors, edition, editorial, format, language, ISBN, pages, tittle);</span>
+<span class="fc" id="L8">    }</span>
 
 <span class="fc" id="L10">    public ThesisOnline() {</span>
 <span class="fc" id="L11">    }</span>
 
     @Override
     public String GetCategory(String CategoryTOnline) {
-<span class="pc bpc" id="L15" title="1 of 2 branches missed.">        if(Arrays.asList(CategoryOnline).contains(Category)) {</span>
-<span class="nc" id="L16">            return CategoryTOnline;</span>
+<span class="pc bpc" id="L15" title="1 of 2 branches missed.">        if(Arrays.asList(CategoryOnline).contains(CategoryTOnline)) {</span>
+<span class="fc" id="L16">            return CategoryTOnline;</span>
         }else {
-<span class="fc" id="L18">            return null;</span>
+<span class="nc" id="L18">            return null;</span>
         }
     }
 
