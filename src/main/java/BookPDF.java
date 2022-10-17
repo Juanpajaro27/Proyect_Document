@@ -8,9 +8,9 @@ public class BookPDF extends DocumentScheme implements IPDF{
     }
 
     @Override
-    public String operation(String OperationBPDF) {
-        if(Arrays.asList(OperationList).contains(OperationBPDF)){
-            return OperationBPDF;
+    public String operation(String OperationBook) {
+        if(Arrays.asList(OperationList).contains(OperationBook)){
+            return OperationBook;
         }else{
             return null;
         }
@@ -20,9 +20,9 @@ public class BookPDF extends DocumentScheme implements IPDF{
     }
 
     @Override
-    public String Category(String CategoryBPDF) {
-        if(Arrays.asList(CategoryPDF).contains(CategoryBPDF)) {
-            return CategoryBPDF;
+    public String Category(String BookCategory) {
+        if(Arrays.asList(CategoryPDF).contains(BookCategory)) {
+            return BookCategory;
         }else {
             return null;
         }

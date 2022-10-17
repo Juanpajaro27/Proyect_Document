@@ -14,7 +14,7 @@ public abstract class DocumentScheme {
     public int pages;
     public String tittle;
 
-    public DocumentScheme(int year, String category, List<String> authors, String edition, String editorial, String format, String language, String ISBN, int pages, String tittle) {
+    protected DocumentScheme(int year, String category, List<String> authors, String edition, String editorial, String format, String language, String ISBN, int pages, String tittle) {
         Year = year;
         Category = category;
         Authors = authors;
@@ -27,7 +27,7 @@ public abstract class DocumentScheme {
         this.tittle = tittle;
     }
 
-    public DocumentScheme() {
+    protected DocumentScheme() {
     }
 
     public int getYear() {

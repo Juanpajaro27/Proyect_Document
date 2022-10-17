@@ -27,10 +27,10 @@ public class BookOnline extends DocumentScheme implements IOnlinePDF  {
     }
 
     @Override
-    public String GetCategory(String CategoryBooknline) {
+    public String GetCategory(String BookOnlineCategory) {
 
-        if(Arrays.asList(CategoryOnline).contains(CategoryBooknline)) {
-            return CategoryBooknline;
+        if(Arrays.asList(CategoryOnline).contains(BookOnlineCategory)) {
+            return BookOnlineCategory;
         }else {
             return null;
         }

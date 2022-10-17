@@ -14,6 +14,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <sonar.organization>juanpajaro27</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        <sonar.exclusions>Proyect_Document/src/test/java/*.java</sonar.exclusions>
     </properties>
     <dependencies>
 
@@ -35,8 +36,8 @@
                     <excludes>
                         <exclude>BookOnlineTest.class</exclude>
                         <exclude>BookPDFTest.class</exclude>
-                        <exclude>CientificOnlineTest.class</exclude>
-                        <exclude>CientificPDFTest.class</exclude>
+                        <exclude>ScientificOnlineTest.class</exclude>
+                        <exclude>ScientificPDFTest.class</exclude>
                         <exclude>MagazineOnlineTest.class</exclude>
                         <exclude>MagazinePDFTest.class</exclude>
                         <exclude>ThesisOnlineTest.class</exclude>
